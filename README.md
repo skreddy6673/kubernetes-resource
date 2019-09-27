@@ -1,4 +1,4 @@
-# kubernetes-resource
+# Concourse kubernetes-resource
 
 [![Build Status](https://travis-ci.org/zlabjp/kubernetes-resource.svg?branch=master)](https://travis-ci.org/zlabjp/kubernetes-resource)
 
@@ -106,7 +106,7 @@ jobs:
       kubectl: apply -f my-app/k8s -f my-app/k8s/production
       wait_until_ready_selector: app=myapp
 ```
-
+above you need to pass kubernetes secrets that are downloaded from universal control pannel.
 ### Force update deployment
 
 ```yaml
